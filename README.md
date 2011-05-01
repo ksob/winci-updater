@@ -21,7 +21,6 @@ WinCI-updater is written in Ruby and uses 'ruby-git' project to automate interac
 WinCI-updater is intended to be be used in conjunction with WinCI-server, which is another gem containing functionality necessary 
 to setup Jenkins CI and enabling to create installation bundle used in provisioning process.
 
-
 Why This Project
 =======
 
@@ -33,13 +32,11 @@ from the server, extracted locally and replaced with the old one, each time a ne
 
 The solution is to incorporate into provisioning a VCS or DVCS such like Git and this project is realization of this solution.
 
-
 Usage
 =====
 
 First download and run WinCI-server.
 Then take a look at test suite (Cucumber stories and RSpec examples in features and spec directories) for examples of usage.
-
 
 Developer Instructions
 ======================
@@ -53,7 +50,6 @@ The dependencies for the gem and for developing the gem are managed by Bundler.
 The test suite is run with:
 
     bundle exec rake
-	
 
 TODO list
 =========
@@ -62,13 +58,12 @@ TODO list
 * Integration with build-publisher Jenkins plugin
 * Incorporating Grit gem for possible enhancements
 
-
 License
 =======
 
 (The MIT License)
 
-Copyright (c) 2011 Kamil Sobieraj, ksob\at\rubyforge.org
+Copyright (c) 2011 Kamil Sobieraj, ksobej@gmail.com
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the
