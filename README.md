@@ -18,18 +18,18 @@ It introduces Agile technologies into provisioning process by keeping it integra
 
 WinCI-updater is written in Ruby and uses 'ruby-git' project to automate interaction with Git executable.
 
-WinCI-updater is intended to be be used in conjunction with WinCI-server, which is another gem containing functionality necessary 
+WinCI-updater is intended to be used in conjunction with WinCI-server, which is another gem containing functionality necessary 
 to setup Jenkins CI and enabling to create installation bundle used in provisioning process.
 
 Why This Project
 =======
 
 I needed an automatic update process that would keep changes made by end-users on client and at the same time would keep everything up to date with the Continuous Integration Server, 
-even if the updates would come so frequent as a few times a day as in Agile developement. Using standard update process where a whole application is beeing downloaded 
-from the server, extracted locally and replaced with the old one, each time a new update appear, seem to be inaproppriate for corporate environments because:
+even if the updates would come so frequent as a few times a day as in Agile development. Using standard update process where a whole application is being downloaded 
+from the server, extracted locally and replaced with the old one, each time a new update appear, seem to be inappropriate for corporate environments because:
 
-  * application bundle ofen weights more than a few megabytes, but corporate computers have usually limited internet connection and so downloading this bundle a few times a day from the server located outside LAN is not efficient
-  * extracted app bundle can weight a few hundred of megabytes and so moving/deleting this whole bunch a few times a day only to get small update, slows down corporate computers and also defragments the disks to slow it even more
+  * application bundle often weights more than a few megabytes, but corporate computers have usually limited internet connection and so downloading this bundle a few times a day from the server located outside LAN is not efficient
+  * extracted app bundle's size can exceed a few hundred of megabytes and so moving/deleting this whole bunch a few times a day only to get small update, slows down corporate computers and also defragments the disks to slow it even more
 
 The solution is to incorporate into provisioning a VCS or DVCS such like Git and this project is realization of this solution.
 
@@ -55,9 +55,9 @@ The test suite is run with:
 TODO list
 =========
 
-* Integration with Gerrit Jenkins plugin
-* Integration with build-publisher Jenkins plugin
-* Incorporating Grit gem for possible enhancements
+* Integrate with Gerrit Jenkins plugin
+* Integrate with build-publisher Jenkins plugin
+* Incorporate Grit gem for possible enhancements
 
 License
 =======
