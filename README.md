@@ -27,8 +27,9 @@ Why This Project
 I needed an automatic update process that would keep changes made by end-users on client and at the same time would keep everything up to date with the Continuous Integration Server, 
 even if the updates would come so frequent as a few times a day as in Agile developement. Using standard update process where a whole application is beeing downloaded 
 from the server, extracted locally and replaced with the old one, each time a new update appear, seem to be inaproppriate for corporate environments because:
-- application bundle ofen weights more than a few megabytes, but corporate computers have usually limited internet connection and so downloading this bundle a few times a day from the server located outside LAN is not efficient
-- extracted app bundle can weight a few hundred of megabytes and so moving/deleting this whole bunch a few times a day only to get small update, slows down corporate computers and also defragments the disks to slow it even more
+
+  * application bundle ofen weights more than a few megabytes, but corporate computers have usually limited internet connection and so downloading this bundle a few times a day from the server located outside LAN is not efficient
+  * extracted app bundle can weight a few hundred of megabytes and so moving/deleting this whole bunch a few times a day only to get small update, slows down corporate computers and also defragments the disks to slow it even more
 
 The solution is to incorporate into provisioning a VCS or DVCS such like Git and this project is realization of this solution.
 
