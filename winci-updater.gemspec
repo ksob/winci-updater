@@ -24,5 +24,5 @@ Gem::Specification.new do |s|
   s.add_development_dependency("cucumber", ["~> 0.10.2"])
   s.add_development_dependency("rspec", ["~> 2.5.0"])
   s.add_development_dependency("jenkins-war", ["~> 1.401"])
-  s.add_development_dependency("winci", ["~> 0.0.2"])
+  s.add_development_dependency("winci", ["~> 0.0.3"])
 end
