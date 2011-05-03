@@ -2,11 +2,6 @@ winci-updater
 ======
 
 [WinCI-updater] File updater capable of downloading files over Git (supports SSH).
-
-Install
-=======
-
-    gem install winci-updater
 	
 Introduction
 =======
@@ -33,11 +28,27 @@ from the server, extracted locally and replaced with the old one, each time a ne
 
 The solution is to incorporate into provisioning a VCS or DVCS such like Git and this project is realization of this solution.
 
+Install
+=======
+
+    gem install winci-updater
+	
 Usage
 =====
 
-First download and run WinCI-server.
-Then take a look at test suite (Cucumber stories and RSpec examples in features and spec directories) for examples of usage.
+	require "rubygems"
+	require "bundler/setup"
+
+	require "winci-updater"
+
+	@git = WinCI::Updater::Git.new "_config.yaml"
+	@git.setup_ssh_key "key"
+
+	@updater_res = @git.provide File.expand_path('..'), 'files', true
+
+Also take a look at test suite (Cucumber stories and RSpec examples in features and spec directories) for examples of usage.
+
+For real world example look at its usage in WinCI-server ( WinCI-server/fixtures/updater ).
 
 Developer Instructions
 ======================
