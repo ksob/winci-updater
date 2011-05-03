@@ -8,16 +8,11 @@ require "pathname"
 require "fileutils"
 require "git"
 
-require 'winci-updater/git_ext/git'
-require 'winci-updater/git_ext/lib'
-require 'winci-updater/git_ext/base'
-require 'winci-updater/core_ext/string'
-require 'winci-updater/const'
-require 'winci-updater/logger'
-
 module WinCI
   module Updater
     class Git
+      include Gui
+
       def initialize config_path="_config.yaml"
         @config = YAML.load_file(config_path)
 
