@@ -57,7 +57,8 @@ The dependencies for the gem and for developing the gem are managed by Bundler.
 
     gem install bundler
     git clone http://github.com/ksob/winci-updater.git
-    bundle install
+    cd ./winci-updater
+	bundle install
 
 The test suite is run with:
 
