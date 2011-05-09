@@ -28,6 +28,13 @@ from the server, extracted locally and replaced with the old one, each time a ne
 
 The solution is to incorporate into provisioning a VCS or DVCS such like Git and this project is realization of this solution.
 
+Compatibility
+=============
+
+Successfully tested on the following mingw versions from RubyInstaller.org :
+
+	ruby 1.8.7 (2011-02-18 patchlevel 334) [i386-mingw32]
+	
 Install
 =======
 
